@@ -1,8 +1,17 @@
-new_sites:
+news_sites:
   eluniversal:
-  url: http://www.eluniversal.com.mx
-  queries:
-    homepage_article_links: '.ce2-Tipo1_Titulo uniplus'
+    url: http://www.eluniversal.com.mx
+    queries:
+      homepage_article_links: '.ce2-Tipo1_Titulo uniplus a'
+      article_body:  '.field-name-body'
+      article_title:  '.Encabezado-Articulo h1'
   elpais:
-  url: https://elpais.com
-    homepage_article_links: '.headline a', '.c_m_c _pr _db'
+    url: https://elpais.com
+    queries:
+      homepage_article_links: '.headline a'
+      article_body: ''
+      article_title: ''
+  xataka:
+    url: https://www.xataka.com.mx
+    queries:
+      homepage_article_links: '.base-asset-image a'

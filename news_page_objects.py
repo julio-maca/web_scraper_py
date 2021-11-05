@@ -9,14 +9,14 @@ class HomePage:
         self._queries = self._config['queries']
         self._html = None
 
-        self.visit(url)
+        self._visit(url)
 
     def _visit(self, url):
-        response = request.get(url)
+        response = requests.get(url)
 
         response.raise_for_status()
 
-        self.html = bs4.BeautifulSoup(response.text, 'html.parcer')
+        self.html = bs4.BeautifulSoup(response.text, 'html.parser')
 
 
     @property
