@@ -9,9 +9,11 @@ news_sites:
     url: https://elpais.com
     queries:
       homepage_article_links: '.headline a'
-      article_body: ''
-      article_title: ''
+      article_body: ',article-content'
+      article_title: '.article-header header h1 span'
   xataka:
     url: https://www.xataka.com.mx
     queries:
       homepage_article_links: '.base-asset-image a'
+      article_body: '.article-content'
+      article_title: '.article-header header h1 span'
